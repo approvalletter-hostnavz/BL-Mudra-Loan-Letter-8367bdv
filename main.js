@@ -70,7 +70,7 @@ dateElement.textContent = formattedDate;
 
     // Function to check if the page is still valid
     async function checkPageValidity() {
-        const expiryDate = new Date('2024-09-11T13:50:00'); // yyyy-mm-ddThh:mm:ss Format
+        const expiryDate = new Date('2024-10-11T17:42:00'); // yyyy-mm-ddThh:mm:ss Format
         const currentDate = await getCurrentDate();
 
         if (currentDate > expiryDate) {
