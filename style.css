@@ -1,24 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
 }
 
-input{
-  font-size: 30px;
-  width: 24%;
-  border: 1px solid black;
-  outline: none;
-  padding-left: 5px;
-  font-family: serif;
-}
-
-form label{
-  font-size: 30px;
-  font-family: serif;
-}
-
-#subm{
+#imagePreview {
   position: absolute;
-  margin-top: -69px;
-  margin-left: 750px;
+  top: 182px;
+  left: 10px;
+  width: 40px;
+  height: 45px;
+  display: none;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.form{
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.form form input, select{
+  width: 80px;
+  outline: none;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #777;
+}
+
+.apr{
+  width: 100%;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: contain;
+}
+
+.apr p{
+  margin-bottom: 8px;
+}
+
+.apr .p1{
+  padding-top: 110px;
+  margin-left: 10px;
+}
+
+.apr .p2{
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.apr .p3{
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.apr #date{
+  position: absolute;
+  padding-top: 90px;
+  margin-left: 247px;
 }
