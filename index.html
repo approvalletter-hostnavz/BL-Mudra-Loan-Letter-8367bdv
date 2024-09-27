@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Approval Letter</title>
+</head>
+<body>
+  
+  <div class="form">
+    <form>
+      <label for="name_input">Name</label>
+      <input type="text" name="name" id="name_input" style="width: 120px;">
+    
+      <label>Winning Amount</label>
+      <input type="text" name="loan" id="amount_input"><br>
+    
+      <label>Fees</label>
+      <input type="text" id="charge_input" style="width: 50px;">&nbsp;
+      
+      <!--
+      <input style="width: 35px; padding: 1px 3px;" type="reset">-->
+      
+      <!--Photo Upload-->
+      <input type="file" style="display: none;" id="imageInput" accept="image/*" />
+      <label for="imageInput" style="border: 1px solid #777; padding: 1px 8px; border-radius: 3px; background: #eee;">Image</label> &nbsp; 
+      
+      <!--Customer Bank Account-->
+      <label for="mySelect">Customer Account</label>
+      <select id="mySelect" style="width: 40px;">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select><br>
+    
+      <!--Customer Account Input-->
+      <div id="custAcc" style="position: relative; left: -150%;">
+      <label for="acc_input">A/c No.</label>
+      <input type="text" name="acc" id="acc_input">
+      
+      
+      <label for="ifsc_input">IFSC</label>
+      <input type="text" name="ifsc" id="ifsc_input">
+      
+      
+      <label for="bank_input">Bank</label>
+      <input type="text" name="bank" id="bank_input">
+      </div>
+
+  </form>
+  
+    <input style="padding: 2px 7px; border-radius: 5px; outline: none; font-size: 12px;" type="submit" onclick="showInput();"><br><br>
+  
+</div>
+  
+  <div class="apr">
+    
+    <div>
+      <img id="imagePreview" />
+    </div>
+    
+    <span id="date">Date:- <span id="dateDisplay" contenteditable></span></span>
+  
+    <!--1-->
+    <p class="p1"><span style="font-size: 13px; font-weight: 600;">Mr/Mrs: <u>&nbsp; &nbsp;<span id='name' style="font-size: 13px; font-weight: 600; text-transform: uppercase;">Label</span>&nbsp; &nbsp;</u></span><br>
+    Serial No: <span contenteditable>62268</span><br>
+    Winning Amount: <span id='amount'>Label</span>/-<br>
+    Registration Charge: <span id='charge'>Label</span>/-</p>
+  
+    <!--2-->
+    <p class="p2">Dear <span id='Cname'>Label</span>,</p>
+  
+    <!--3-->
+    <p class="p3">&nbsp;&nbsp; &nbsp; We are sending you this letter to confirm that You have Won the prize of Rs. <span id='Camount'>Label</span> by KBC Department. Please Collect Your Prize Urgently by follow the Company Rules & Regulations.
+      </p>
+  
+    <!--5-->
+    <p class="p2">Please continue your process without any hesitation by paying your Registration Charge Rs. <span id='Ccharge'>Label</span> in company bank account.
+</p>
+  
+    <!--6-->
+    <p id="custAc" style="position: absolute; padding-left: 52%; display: none;">Customer Credit Account:-<br>
+    Name:- <span id="Ccname" contenteditable>Label</span><br>
+    A/C:- <span id="acc">Label</span><br>
+    IFSC:- <span id="ifsc">Label</span><br>
+    Bank:- <span id="bank">Label</span></p>
+    
+    <p class="p2">Payment this account:-<br>
+    Name:- Mudra Finance Ltd<br>
+    A/C:- XXXX001700094081<br>
+    IFSC:- PUNB0156400<br>
+    Bank:- Punjab National Bank</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  </div>
+  
+  <marquee>This Page will be End on 2024-10-25 at 09:24.</marquee>
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
